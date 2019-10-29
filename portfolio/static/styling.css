@@ -1,0 +1,344 @@
+
+html{
+    scroll-behavior: smooth;
+}
+#bgvideo{
+
+    position: fixed;
+    min-height: 100%;
+    min-width: 100%;
+
+    z-index: -100;
+}
+resume{
+    background-color: #14222a;
+}
+#index_brand{
+    font-size: 22px;
+    color: white;
+
+}
+.navbar_p{
+background-color: transparent;
+   background: transparent;
+   border-color: transparent;
+}
+
+/* updated */
+.navbar-fixed-top.scrolled {
+    background-color: rgb(69, 30, 80)!important;
+/*  background-image: linear-gradient(rgb(73, 125, 166), rgb(35, 164, 205), rgb(73, 125, 166))!important;*/
+  transition: background-image 200ms linear;
+}
+
+/* updated - added new */
+.navbar_p li.active a{
+    color: rgb(151, 203, 223)!important;
+    background-color: rgb(69, 30, 80)!important;
+}
+.nav-link:hover{
+   color: rgb(151, 203, 223)!important;
+}
+
+#navbarCollapse{
+    font-size: 20px;
+}
+
+#navbarCollapse ul li a{
+    color: white;
+}
+
+.icon-bar{
+    background-color: white;
+}
+
+.box{
+    text-align: center;
+}
+#home{
+    padding-top: 200px;
+    overflow: auto;
+}
+#home img{
+    width: 180px;
+    display: inline-block;
+}
+.p1{
+    font-size: 80px;
+    padding-bottom: 20px;
+    text-shadow: 5px 5px 10px black;
+}
+.icons{
+     width: 30px !important;
+    height: 30px !important;
+}
+#about{
+    color: white;
+    padding: 250px 120px 200px 120px;
+    overflow: auto;
+}
+
+.p2{
+    font-size: 20px;
+    line-height: 2;
+}
+
+#portfolio{
+    margin: 40px;
+    overflow: auto;
+    background-color: white;
+    color: #51537d;
+    }
+#projectsTitle{
+        font-size:40px;
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+
+#portfolio1, #portfolio2{
+    overflow: auto;
+    padding: 20px;
+}
+.span{
+    font-size: 22px;
+    padding: 8px;
+}
+#portfolio1 p, #portfolio2 p{
+    padding-top: 30px;
+    font-size: 18px;
+}
+#portfolio2{
+    padding-bottom: 50px;
+}
+#image1{
+    padding: none;
+    position: relative;
+}
+
+.group1, .group2{
+    opacity: 0;
+}
+/*
+.group1{
+    position: absolute;
+    left: 25%;
+}
+*/
+#image2{
+    padding: none;
+    position: relative;
+}
+
+#img2:hover img, #img1:hover img{
+    transform: scale(0.99);
+    opacity: 0.5;
+    }
+#img1:hover .group1{
+    opacity: 1;
+}
+#img2:hover .group2{
+    opacity: 1;
+}
+button a, button:hover a{
+    text-decoration: none;
+    color: white;
+}
+#contact{
+   text-align: center;
+   overflow: auto;
+}
+
+#contactsTitle{
+    font-size:40px;
+    padding-top: 50px;
+}
+#contactHdr{
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#p3{
+    color: #23a4cd;
+}
+#contForm label{
+    font-size: 18px;
+}
+#button_c{
+    margin-bottom: 50px;
+}
+
+
+                 /*Resume Tab*/
+
+/*
+.fixed-top{
+    background-image: linear-gradient(rgb(73, 125, 166), rgb(35, 164, 205), rgb(73, 125, 166))!important;
+}
+*/
+
+
+    #sideNav{
+        position: fixed;
+        padding: 0px;
+        margin: 0px;
+        background-color: rgb(52, 58, 64);
+        height: 100%;
+        padding-top: 30px;
+    }
+#sideBar ul li a{
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+
+#sideBar ul li{
+    padding: 5px 30px;
+}
+#sideBar ul{
+    list-style: none;
+}
+
+
+/*
+.navbar-toggler-icon{
+   color: black;
+
+}
+*/
+
+    @media (min-width:768px){
+
+        #resume_n{
+            display: none;
+        }
+        #sideNav{
+            display: block;
+        }
+    }
+
+
+@media (max-width:768px){
+     #resume_n{
+            display: block;
+        }
+        #sideNav{
+            display: none;
+        }
+}
+
+
+    #title{
+    padding: 80px 60px 10px 90px;
+    font-size: 60px;
+    color: #062632;
+    text-align: left;
+    font-weight: bold;
+    }
+    #AboutResume p{
+        padding: 10px 90px 50px 90px;
+        font-size: 17px;
+    }
+
+   #skills{
+        padding: 60px 15px 60px 15px;
+        text-align: center;
+        overflow: auto;
+    }
+    #skillsTitle{
+        font-size:50px;
+        text-align: left;
+        padding-left: 90px;
+        font-weight: bold;
+        padding-bottom: 50px;
+    }
+#skillsTab{
+    padding-left: 20px;
+}
+     #skills ul{
+        list-style: none;
+
+    }
+#skillsTab ul li a{
+   color: black;
+}
+
+
+    #skillsContent ul li p{
+        text-align: center;
+        padding-top: 15px;
+        font-size: 18px;
+    }
+    #skillsContent ul li img{
+        padding-top: 20px;
+        height: 80px;
+    }
+    #skillsContent ul li img:hover{
+        padding-top: 16px;
+        height: 80px;
+    }
+    #skillsContent{
+        display: inline-block;
+    }
+    #frontEnd ul li, #backEnd ul li, #others ul li{
+        float: left;
+        padding: 40px;
+    }
+    #education{
+        text-align: left;
+        align-content: center;
+        overflow: auto;
+        padding-bottom: 40px;
+        padding-left: 90px;
+    }
+    #eduTitle{
+        font-size:50px;
+        padding-top: 50px;
+        font-weight: bold;
+    }
+
+    #education ul{
+        list-style: none;
+        text-align: left;
+        padding-left: 0px;
+    }
+    #p1{
+        font-size: 30px;
+        padding-top: 40px;
+        color: dimgrey;
+    }
+    #p2{
+        font-size: 20px;
+    }
+    #span{
+        float: right;
+        color:#23a4cd;
+        padding-right: 35px;
+    }
+#experience{
+    text-align: left;
+    padding-bottom: 70px;
+}
+#expTitle{
+    padding-left: 90px;
+    font-size: 50px;
+    padding-top: 50px;
+    font-weight: bold;
+}
+#experience ul{
+    list-style: none;
+    font-size: 30px;
+    padding-left: 90px;
+}
+#experience ul li{
+    color: dimgrey;
+}
+#nova{
+    color:#23a4cd;
+    font-size: 25px;
+}
+#exp_li{
+    color: black;
+    font-size: 20px;
+    padding-bottom: 20px;
+}

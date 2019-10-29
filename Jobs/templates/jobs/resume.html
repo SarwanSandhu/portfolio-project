@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+         {% load staticfiles %}
+ <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>
+       Sarwan-resume
+    </title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+      <link href="{% static 'styling.css' %}" rel="stylesheet">
+      <style type="text/css">
+        body {
+            position: relative;
+        }
+    </style>
+  </head>
+  <body>
+<div class="row">
+    <div class="col-md-3">
+        <nav id="sideBar">
+        <ul id="sideNav" class="nav nav-pills nav-stacked" data-spy="affix-top">
+<li><a href="{% url 'home' %}"><img class="icons" src="{% static 'images/back.png' %}"></a></li>                <li><a class="nav-link" href="#AboutResume">About</a></li>
+                <li><a class="nav-link" href="#education">Education</a></li>
+                <li><a class="nav-link" href="#skills">Skills</a></li>
+                <li><a class="nav-link" href="#experience">Experience</a></li>
+            </ul></nav>
+
+        </div>
+    <div id="resume_n">
+         <nav role="navigation" class="navbar fixed-top bg-dark navbar-dark" >
+             <!-- updated  removed div navbar-header -->
+              <a class="navbar-brand" href="{% url 'home' %}">Sarwan Singh</a>
+<!-- updated  renamed class to navbar-toggeler it was before navbar-toggle -->
+              <button type="button" class="navbar-toggler resume_t" data-target="#resumeNav" data-toggle="collapse" aria-controls="resumeNav" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+
+          <div class="navbar-collapse collapse" id="resumeNav">
+          <ul class="nav navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#AboutResume">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+            <li class="nav-item"> <a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          </ul>
+          </div>
+
+
+  </nav>
+        </div>
+
+    <div id="main" class="col-sm-12 col-md-9">
+
+<div class="box"><div id="AboutResume">
+                <h2 id="title">Sarwan Singh</h2>
+
+                <p>
+                Organized, qualified professional with strong time management skills, seeking a challenging full-time position that would effectively utilizes my ability to solve challenging problems and my extensive knowledge and experience in the world of Information Technology, Customer services and Sales.
+                </p>
+
+            </div>
+            <hr>
+            <div id="education">
+              <p id="eduTitle">Education</p>
+
+              <ul>
+                  <li>
+                     <p id="p1">Cloud Computing</p>
+                      <p id="p2">Cambrian College, Toronto, ON, Canada<span id="span">September 2017 - December 2018</span ></p>
+                      <p ></p>
+
+                  </li>
+
+                  <li>
+                  <p id="p1">Computer Science & Engineering</p>
+                      <p id="p2">Guru Nanak Dev University, Amritsar, PB, India<span id="span">August 2012 - May 2016</span ></p>
+                      <p ></p>
+                  </li>
+
+              </ul>
+
+      </div>
+         <hr>
+    <div id="skills">
+          <p id="skillsTitle">My Skills</p>
+
+        <ul class="nav nav-pills nav-justified" id="skillsTab">
+        <li class="nav-item"><a class="nav-link active"href="#frontEnd" data-toggle="tab">Front End</a></li>
+        <li class="nav-item"><a class="nav-link"href="#backEnd" data-toggle="tab">Back End</a></li>
+        <li class="nav-item"><a class="nav-link"href="#others" data-toggle="tab">Others </a></li>
+
+        </ul>
+
+        <div id="skillsContent" class="tab-content">
+        <div class="tab-pane active " id="frontEnd">
+           <ul>
+              <li><img src="{% static 'images/html5.png' %}">
+               <p>HTML 5</p></li>
+
+              <li><img src="{% static 'images/css.png' %}">
+               <p>CSS 3</p></li>
+              <li><img src="{% static 'images/javascript.png' %}">
+               <p>JavaScript</p></li>
+               <li><img src="{% static 'images/bootstrap.png' %}">
+               <p>Bootstrap</p></li>
+               <li><img src="{% static 'images/angular.png' %}">
+               <p>Angular</p></li>
+          </ul>
+
+            </div>
+
+
+
+            <div class="tab-pane fade" id="backEnd">
+           <ul>
+              <li><img src="{% static 'images/python.png' %}">
+               <p>Python</p></li>
+
+              <li><img src="{% static 'images/django.png' %}">
+               <p>Django</p></li>
+              <li><img src="{% static 'images/php.png' %}">
+               <p>PHP</p></li>
+          </ul>
+            </div>
+
+            <div class="tab-pane fade" id="others">
+
+               <ul>
+                  <li><img src="{% static 'images/java.png' %}">
+                   <p>Java</p></li>
+
+                  <li><img src="{% static 'images/c++.png' %}">
+                   <p>C++</p></li>
+                  <li><img src="{% static 'images/csharp.png' %}">
+                   <p>C#</p></li>
+                   <li><img src="{% static 'images/c.png' %}">
+                   <p>C</p></li>
+              </ul>
+            </div>
+
+        </div>
+
+        </div>
+
+          <hr>
+          <div id="experience">
+             <p id="expTitle">Experience</p>
+
+              <ul>
+              <li>
+                  Service Desk Analyst
+                  <br/>
+                  <span id="nova">
+                  Nova Networks
+                  </span>
+                  <br/>
+                  <p id="exp_li">
+                      • Level 1 Service Desk, responding to end-user issues <br />
+• Performing regular preventive maintenance of all IT infrastructure <br />
+• Diagnosing desktop, network, and server problems and resolving them <br />
+• On-site team interfacing/escalating for assistance and other duties as required <br />
+• Provide technical support to Lululemon retail company – includes POS, store equipment
+                  </p>
+              </li>
+                  <hr>
+              </ul>
+
+          </div>
+        </div>
+
+    </div>
+      </div>
+      <script>
+       var toggle=0;
+
+
+$(".navbar-toggler").click(
+function(){
+if(toggle==0){
+     $("#resumeNav").css({"display":"block"});
+//     $(".collapse").css({"background-image": "linear-gradient(rgb(73, 125, 166), rgb(35, 164, 205), rgb(73, 125, 166))"});
+         toggle=1;
+}
+else{
+    $("#resumeNav").css({"display":"none"});
+            toggle=0;
+}
+});
+
+$(".box").click(
+function(){
+    if(toggle==1){
+        $("#resumeNav").css({"display":"none"});
+            toggle=0;
+    }
+    });
+$("#resumeNav").click(
+    function(){
+        if(toggle==1){
+            $("#resumeNav").css({"display":"none"});
+            toggle=0;
+        }
+
+       $(document).ready(function () {
+     $('body').scrollspy({
+         target: '#sideBar',
+           offset: 10
+       });
+    });
+    });
+          $(document).ready(function () {
+
+ var windowWidth = $(window).width();
+              $(document).ready(function(){
+                   if(windowWidth<768){
+            $('body').scrollspy({
+            target: '.navbar',
+            offset: 10
+        });
+          }
+              else{
+                   $('body').scrollspy({
+            target: '#sideBar',
+            offset: 10
+        });
+              }
+          });
+
+              });
+        $(window).resize(function(){location.reload();});
+
+      </script>
+  </body>
+</html>
+

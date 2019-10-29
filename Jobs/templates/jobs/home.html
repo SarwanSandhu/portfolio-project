@@ -1,0 +1,478 @@
+
+
+
+<!--  <div class="album py-5 bg-light">-->
+<!--    <div class="container">-->
+
+<!--      <div class="row">-->
+<!--          {% for job in jobs.all %}-->
+<!--        <div class="col-md-4">-->
+<!--          <div class="card mb-4 shadow-sm">-->
+<!--           <img class="card-img-top" src="{{ job.image.url }}" width="100%" height="300px">-->
+<!--            <div class="card-body">-->
+<!--              <p class="card-text">{{ job.summary }}</p>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        {% endfor %}-->
+
+
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</main>-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+      {% load staticfiles %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+   <meta name="generator" content="">
+      <title>
+      Portfolio
+    </title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+      <link href="{% static 'styling.css' %}" rel="stylesheet">
+
+      <style>
+
+      body{
+
+    background: url({% static 'images/bg-signup.jpg' %}) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    font-family: "Gill Sans", system-ui, serif;
+    color: white;
+              position: relative;
+
+}
+
+
+      </style>
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<!--      <video autoplay loop muted id="bgvideo">-->
+<!--          <source src="{% static 'videoes/bvideo.mp4' %}" type="video/mp4">-->
+<!--      </video>-->
+
+   <nav role="navigation" class="navbar navbar-fixed-top navbar-default navbar_p">
+      <div class="container-fluid">
+          <div class="navbar-header">
+              <a class="navbar-brand" id ="index_brand" href="{% url 'home' %}">Sarwan Singh</a>
+              <button type="button" class="navbar-toggle" data-target="#navbarCollapse" data-toggle="collapse" aria-controls="navbarCollapse" aria-label="Toggle navigation" aria-expanded="false">
+                  <span class="sr-only">Toggle Navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+          </div>
+          <div class="navbar-collapse collapse" id="navbarCollapse">
+          <ul class="nav navbar-nav navbar-right ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+            <li class="nav-item"> <a class="nav-link" href="{% url 'resume' %}">Resume</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+          </div>
+
+      </div>
+  </nav>
+
+
+<div class="box">
+      <div id="home" class="container-fluid">
+            <img src="{% static 'images/sarwan.jpg' %}" alt="Responsive" class="img-responsive img-circle">
+            <p class="p1">Sarwan Singh</p>
+            <div>
+        <a href="https://www.linkedin.com/in/sarwan-singh-53748811b/" target="_blank">
+        <img class="icons" src=" {% static 'images/linkedin.png' %}">
+        </a>
+        <a href="https://github.com/SarwanSandhu" target="_blank">
+        <img class="icons" src="{% static 'images/github.png' %} ">
+        </a>
+
+    </div>
+        </div>
+
+
+    <div id="about" class="container-fluid">
+
+
+
+          <p class="p2">
+              Organized, qualified professional with strong time management skills, seeking a challenging full-time position that would effectively utilizes my ability to solve challenging problems and my extensive knowledge and experience in the world of Information Technology and Customer services.
+              Co-operative education is available with this program.
+          </p>
+
+      </div>
+        <div id="portfolio">
+            <p id="projectsTitle">Portfolios</p>
+ <div>
+
+<div id="portfolio1">
+<div class="col-sm-0 col-sm-0 col-md-1"></div>
+
+<div id="img1">
+   <img id="image1" class="col-xs-12 col-sm-8 col-md-5 img-responsive" src="{% static 'images/project1.png' %}" data-target="#project1" data-toggle="modal">
+    <div class="btn-group group1">
+    <button type="button" class="button1 btn btn-primary video-btn" data-target="#project1" data-toggle="modal">Preview</button>
+        <button type="button" class="button2 btn btn-primary"><a href="https://github.com/SarwanSandhu/MathsGame">View Code</a></button>
+    </div>
+
+
+       </div>
+
+   <p class="col-xs-12 col-sm-4 col-md-5">
+      <span class="span">Maths game</span> <br /> It is a simple mathematics game created using HTML, CSS and Javacript. It is a game that projects multiplication questions and 4 options for user to select one of the answer. It is a time based game that plays for 60 seconds and at the last provide you the total score.</p>
+      <div class="col-sm-0 col-sm-0 col-md-1"></div>
+
+</div>
+
+     <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
+
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                <video controls id="video1" style="width: 100%; height: auto; margin:0 auto; frameborder:0;">
+                <source src="{% static 'videoes/Untitled.mp4' %}" type="video/mp4">
+                Your browser doesn't support HTML5 video tag.
+                </video>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div id="portfolio2" >
+<div id="Project02">
+<div class="col-sm-0 col-sm-0 col-md-1"></div>
+<p class="col-xs-12 col-sm-4 col-md-5">
+<span class="span">Fruit slice Game</span> <br />    Fruits slice game is user interactive game, it has one fruit dropping at one time with different speeds. If user successful slices the fruit, score increases by1 and if missed one life is decreased. Game ends when user loses all three lives and at the end of games, Score is displayed. <br />
+• Technologies used: HTML, CSS, JavaScript, jQuery
+</p>
+    <div id="img2">
+    <img id="image2" class="col-xs-12 col-sm-8 col-md-5 img-responsive" src="{% static 'images/project2.png' %}" class="btn" data-target="#project2" data-toggle="modal">
+
+    <div class="btn-group group2">
+    <button type="button" class="button3 btn btn-primary" data-target="#project2" data-toggle="modal">Preview</button>
+    <button type="button" class="button4 btn btn-primary"><a href="https://github.com/SarwanSandhu/Fruit-Slicing-Game" >View Code</a></button>
+    </div>
+
+</div>
+<div class="col-sm-0 col-sm-0 col-md-1"></div>
+</div>
+<div class="modal" id="project2" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+          <video controls id="video2" style="width: 100%; height: auto; margin:0 auto; frameborder:0;">
+            <source src="{% static 'videoes/project2.mp4' %}" type="video/mp4">
+              Your browser doesn't support HTML5 video tag.
+        </video>
+    </div>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+
+
+
+<div id="contact" class="container-fluid">
+  <p id="contactsTitle">Contact</p>
+  <div id="contactHdr">
+  <p id="p3"><i>Thanks for viewing My portfolio!</i></p>
+  <p>Please leave your suggestions and queries below:</p>
+  </div>
+
+  <div>
+  <form id="contForm" class="form-horizontal" method="POST" action="{% url 'home' %}">
+      {% csrf_token %}
+
+<div class="form-group">
+  <label for="name" class="control-label col-sm-3">
+    Name*
+  </label>
+
+  <div class="col-sm-6">
+    <input type="text" id="name" name="name" placeholder="Name" class="form-control form-check-input" required >
+  </div>
+</div>
+
+<div class="form-group">
+  <label for="email" class="col-sm-3 control-label">
+    Email*
+  </label>
+
+  <div class="col-sm-6">
+    <input type="email" id="email" name="email" placeholder="Email"  class="form-control form-check-input" required >
+  </div>
+</div>
+
+<div class="form-group">
+  <label for="comments" class="col-sm-3 control-label">
+    Comments*
+  </label>
+
+  <div class="col-sm-6">
+      <textarea class="form-control" name="message" row="5" id="comments"  class="form-control form-check-input" required></textarea>
+  </div>
+</div>
+
+<div class="col-sm-offset-3 col-sm-6">
+  <input type="submit" class="btn btn-default" value="Send Email" id="button_c">
+</div>
+
+</form>
+  </div>
+
+</div>
+
+</div>
+
+
+<footer class="text-muted">
+  <div class="container text-center">
+    <p>&copy; Sarwan Singh {% now "Y" %}</p>
+  </div>
+</footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+    </script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+
+<!--      <script>-->
+<!--      $(function () {-->
+<!--  $(document).scroll(function () {-->
+<!--    var $nav = $(".navbar-fixed-top");-->
+<!--    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());-->
+
+<!--//    $(".nav-link").active(function(){-->
+<!--//        (this).css({"font-style":"monospace"});-->
+<!--//    });-->
+<!--    });-->
+
+<!--  var windowWidth = $(window).width();-->
+<!--  if(windowWidth<500){-->
+
+<!--    $(".group1").css({"position":"absolute", "left":"35%", "margin-top":"100px"});-->
+<!--    $(".group2").css({"position":"absolute", "left":"35%", "margin-top":"100px"});-->
+<!--          }-->
+
+<!--          else if(windowWidth<600){-->
+
+<!--    $(".group1").css({"position":"absolute", "left":"35%", "margin-top":"200px"});-->
+<!--    $(".group2").css({"position":"absolute", "left":"35%", "margin-top":"330px"});-->
+<!--          }-->
+<!--          else if(windowWidth<700){-->
+
+<!--    $(".group1").css({"position":"absolute", "left":"35%", "margin-top":"240px"});-->
+<!--    $(".group2").css({"position":"absolute", "left":"38%", "margin-top":"390px"});-->
+<!--          }-->
+<!--          else if(windowWidth<768){-->
+
+<!--    $(".group1").css({"position":"absolute", "left":"35%", "margin-top":"240px"});-->
+<!--    $(".group2").css({"position":"absolute", "left":"40%", "margin-top":"430px"});-->
+<!--          }-->
+<!--          else if(windowWidth<991){-->
+
+<!--    $(".group1").css({"position":"absolute", "left":"28%", "margin-top":"240px"});-->
+<!--    $(".group2").css({"position":"absolute", "left":"55%", "margin-top":"190px"});-->
+<!--          }-->
+<!--          else if(windowWidth<1200){-->
+
+<!--    $(".group1").css({"position":"absolute", "left":"25%", "margin-top":"140px"});-->
+<!--    $(".group2").css({"position":"absolute", "left":"62%", "margin-top":"190px"});-->
+<!--          }-->
+<!--          else{-->
+
+<!--    $(".group1").css({"position":"absolute", "left":"25%", "margin-top":"230px"});-->
+<!--    $(".group2").css({"position":"absolute", "left":"64%", "margin-top":"260px"});-->
+<!--          }-->
+
+
+
+<!--var toggle=0;-->
+
+
+<!--$(".navbar-toggle").click(-->
+<!--function(){-->
+<!--if(toggle==0){-->
+<!--     $(".collapse").css({"display":"block"});-->
+<!--//     $(".collapse").css({"background-image": "linear-gradient(rgb(73, 125, 166), rgb(35, 164, 205), rgb(73, 125, 166))"});-->
+<!--         toggle=1;-->
+<!--}-->
+<!--else{-->
+<!--    $(".collapse").css({"display":"none"});-->
+<!--            toggle=0;-->
+<!--}-->
+<!--});-->
+
+<!--$(".box").click(-->
+<!--function(){-->
+<!--    if(toggle==1){-->
+<!--        $(".collapse").css({"display":"none"});-->
+<!--            toggle=0;-->
+<!--    }-->
+<!--    });-->
+<!--$(".collapse").click(-->
+<!--    function(){-->
+<!--        if(toggle==1){-->
+<!--            $(".collapse").css({"display":"none"});-->
+<!--            toggle=0;-->
+<!--        }-->
+<!--    });-->
+<!--      });-->
+
+
+<!--      </script>-->
+<!--  </body>-->
+<!--</html>-->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+      <script>
+      $(function () {
+
+
+  $(document).scroll(function () {
+    var $nav = $(".navbar-fixed-top");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+
+//    $(".nav-link").active(function(){
+//        (this).css({"font-style":"monospace"});
+//    });
+    });
+
+  var windowWidth = $(window).width();
+  if(windowWidth<500){
+
+    $(".group1").css({"position":"absolute", "left":"35%", "margin-top":"100px"});
+    $(".group2").css({"position":"absolute", "left":"35%", "margin-top":"100px"});
+          }
+
+          else if(windowWidth<600){
+
+    $(".group1").css({"position":"absolute", "left":"35%", "margin-top":"200px"});
+    $(".group2").css({"position":"absolute", "left":"35%", "margin-top":"330px"});
+          }
+          else if(windowWidth<700){
+
+    $(".group1").css({"position":"absolute", "left":"35%", "margin-top":"240px"});
+    $(".group2").css({"position":"absolute", "left":"38%", "margin-top":"390px"});
+          }
+          else if(windowWidth<768){
+
+    $(".group1").css({"position":"absolute", "left":"35%", "margin-top":"240px"});
+    $(".group2").css({"position":"absolute", "left":"40%", "margin-top":"430px"});
+          }
+          else if(windowWidth<991){
+
+    $(".group1").css({"position":"absolute", "left":"28%", "margin-top":"240px"});
+    $(".group2").css({"position":"absolute", "left":"55%", "margin-top":"190px"});
+          }
+          else if(windowWidth<1200){
+
+    $(".group1").css({"position":"absolute", "left":"25%", "margin-top":"140px"});
+    $(".group2").css({"position":"absolute", "left":"62%", "margin-top":"190px"});
+          }
+          else{
+
+    $(".group1").css({"position":"absolute", "left":"25%", "margin-top":"230px"});
+    $(".group2").css({"position":"absolute", "left":"64%", "margin-top":"260px"});
+          }
+
+
+
+var toggle=0;
+
+
+$(".navbar-toggle").click(
+function(){
+if(toggle==0){
+     $(".collapse").css({"display":"block"});
+//     $(".collapse").css({"background-image": "linear-gradient(rgb(73, 125, 166), rgb(35, 164, 205), rgb(73, 125, 166))"});
+         toggle=1;
+}
+else{
+    $(".collapse").css({"display":"none"});
+            toggle=0;
+}
+});
+
+$(".box").click(
+function(){
+    if(toggle==1){
+        $(".collapse").css({"display":"none"});
+            toggle=0;
+    }
+    });
+$(".collapse").click(
+    function(){
+        if(toggle==1){
+            $(".collapse").css({"display":"none"});
+            toggle=0;
+        }
+    });
+      });
+
+
+$('#project1').on('shown.bs.modal', function () {
+$('#video1')[0].play();
+});
+$('#project1').on('hidden.bs.modal', function () {
+  $('#video1')[0].pause();
+});
+
+$('#project2').on('shown.bs.modal', function () {
+$('#video2')[0].play();
+});
+$('#project2').on('hidden.bs.modal', function () {
+  $('#video2')[0].pause();
+});
+      </script>
+
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
